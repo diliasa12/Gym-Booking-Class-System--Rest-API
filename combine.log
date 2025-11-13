@@ -1,0 +1,35 @@
+{
+  message: 'POST /api/users/book/69153901773f50bb4a468827 400 - 34ms',
+  level: 'info',
+  timestamp: '2025-11-13 09:17:47'
+}
+{
+  message: 'POST /api/users/book/69153901773f50bb4a46882 500 - 7ms',
+  level: 'info',
+  timestamp: '2025-11-13 09:18:01'
+}
+{
+  message: 'POST /api/users/book/69153901773f50bb4a468829 404 - 8ms',
+  level: 'info',
+  timestamp: '2025-11-13 09:18:17'
+}
+{
+  message: 'GET /api/users/book/69153901773f50bb4a468829 404 - 1ms',
+  level: 'info',
+  timestamp: '2025-11-13 09:18:28'
+}
+{
+  message: 'GET /api/users/profile 200 - 7ms',
+  level: 'info',
+  timestamp: '2025-11-13 09:19:02'
+}
+{
+  message: 'GET /api/users/profile 500 - 5ms',
+  level: 'info',
+  timestamp: '2025-11-13 09:19:16'
+}
+{
+  message: 'GET /api/users/profile 200 - 5ms',
+  level: 'info',
+  timestamp: '2025-11-13 09:19:24'
+}

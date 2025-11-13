@@ -1,0 +1,22 @@
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import mongoseConnect from "./src/config/db.js";
+import routeAuth from "./src/routes/auth.routes.js";
+import routeUser from "./src/routes/user.routes.js";
+import routeClass from "./src/routes/class.routes.js";
+import loggerMiddleware from "./src/middlewares/logger.middleware.js";
+const app = express();
+dotenv.config();
+const PORT = process.env.PORT || 5000;
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cors());
+mongoseConnect();
+app.use(loggerMiddleware);
+app.use("/api/auth", routeAuth);
+app.use("/api/classes", routeClass);
+app.use("/api/users", routeUser);
+app.listen(PORT, () => {
+  console.log(`SERVER RUNNING ON http://localhost:${PORT}`);
+});
