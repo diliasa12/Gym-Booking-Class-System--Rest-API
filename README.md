@@ -1,4 +1,4 @@
-# 🎟️ Event Booking System API
+# 🎟️Gym Booking Class System API
 
 Sebuah RESTful API berbasis **Node.js + Express + MongoDB** untuk mengelola sistem pemesanan event.  
 API ini memungkinkan **admin** membuat dan mengelola event, serta **user** untuk melihat, memesan, dan membatalkan event yang tersedia.
@@ -11,7 +11,7 @@ API ini memungkinkan **admin** membuat dan mengelola event, serta **user** untuk
 - **Authentication:** JWT (JSON Web Token)
 - **Logger:** Morgan / Winston
 - **Environment:** dotenv
-- **Enkripsi:** bcrypt
+- **Enkripsi:** bcryptjs
 
 ---
 
